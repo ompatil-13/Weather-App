@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="weather-container">
+    <h1>Weather App</h1>
+    <input type="text" id="locationInput" placeholder="Enter location" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="weatherResult" class="weather-widgets hidden">
+      <h2 id="locationName"></h2>
+      <div class="widgets">
+        <div class="widget">
+          <i class="fas fa-thermometer-half"></i>
+          <h3>Temperature</h3>
+          <p id="temperature"></p>
+        </div>
+        <div class="widget">
+          <i class="fas fa-cloud-sun"></i>
+          <h3>Condition</h3>
+          <p id="condition"></p>
+        </div>
+        <div class="widget">
+          <i class="fas fa-tint"></i>
+          <h3>Humidity</h3>
+          <p id="humidity"></p>
+        </div>
+        <div class="widget">
+          <i class="fas fa-wind"></i>
+          <h3>Wind</h3>
+          <p id="wind"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
